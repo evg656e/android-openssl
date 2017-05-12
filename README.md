@@ -7,8 +7,8 @@ modified version of setenv-android.sh and build script support all architectures
 
 see details : http://wiki.openssl.org/index.php/Android
 
+Windows instructions
 ===============
-Windows instructions:
 
  * install msys2, follow instructions on site: http://www.msys2.org/
  * run msys and install additional packages needed by scripts: pacman -S perl tar make
