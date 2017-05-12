@@ -36,7 +36,7 @@ _ANDROID_NDK="android-ndk-r13"
 # Android 5.0, there will likely be another platform added (android-22?).
 # This value is always used.
 # _ANDROID_API="android-14"
-_ANDROID_API="android-18"
+_ANDROID_API="android-24"
 #_ANDROID_API="android-21"
 
 #####################################################################
@@ -73,7 +73,7 @@ fi
 # https://android.googlesource.com/platform/ndk/+/ics-mr0/docs/STANDALONE-TOOLCHAIN.html
 
 ANDROID_TOOLCHAIN=""
-for host in "linux-x86_64" "linux-x86" "darwin-x86_64" "darwin-x86"
+for host in "linux-x86_64" "linux-x86" "darwin-x86_64" "darwin-x86" "windows-x86_64" "windows-x86"
 do
   if [ -d "$ANDROID_NDK_ROOT/toolchains/$_ANDROID_EABI/prebuilt/$host/bin" ]; then
     ANDROID_TOOLCHAIN="$ANDROID_NDK_ROOT/toolchains/$_ANDROID_EABI/prebuilt/$host/bin"
